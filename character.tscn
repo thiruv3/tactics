@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bspicmigphucw"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vu45j"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_glpr6"]
+
+[node name="character" type="CharacterBody3D" unique_id=763452322]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=924999872]
+mesh = SubResource("CapsuleMesh_vu45j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1657704861]
+shape = SubResource("CapsuleShape3D_glpr6")
