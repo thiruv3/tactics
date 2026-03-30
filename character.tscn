@@ -4,7 +4,7 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_glpr6"]
 
-[node name="character" type="CharacterBody3D" unique_id=763452322]
+[node name="Character" type="CharacterBody3D" unique_id=763452322]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=924999872]
 mesh = SubResource("CapsuleMesh_vu45j")

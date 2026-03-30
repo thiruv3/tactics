@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cywcjmppo84ny"]
 
-[ext_resource type="PackedScene" uid="uid://bspicmigphucw" path="res://character.tscn" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://dmuafde77vglo" path="res://level.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bspicmigphucw" path="res://Character.tscn" id="1_r0du0"]
+[ext_resource type="PackedScene" uid="uid://dmuafde77vglo" path="res://Level.tscn" id="2_cm0pq"]
+[ext_resource type="PackedScene" uid="uid://dko1jyqahc40j" path="res://Cursor.tscn" id="3_fos0i"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -16,7 +17,7 @@ sky = SubResource("Sky_h2yge")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="main" type="Node3D" unique_id=270583585]
+[node name="Main" type="Node3D" unique_id=270583585]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1537714716]
 environment = SubResource("Environment_1bvp3")
@@ -25,10 +26,10 @@ environment = SubResource("Environment_1bvp3")
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
 
-[node name="freya" parent="." unique_id=763452322 instance=ExtResource("1_0xm2m")]
+[node name="Freya" parent="." unique_id=763452322 instance=ExtResource("1_r0du0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3, 3)
 
-[node name="level" parent="." unique_id=528308987 instance=ExtResource("2_h2yge")]
+[node name="Level" parent="." unique_id=528308987 instance=ExtResource("2_cm0pq")]
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1160310372]
-transform = Transform3D(-4.371139e-08, 0.7071068, -0.7071068, 0, 0.7071068, 0.7071068, 1, 3.090862e-08, -3.090862e-08, -4.6536665, 7.639612, 0)
+[node name="Cursor" parent="." unique_id=1795331823 instance=ExtResource("3_fos0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, 3)

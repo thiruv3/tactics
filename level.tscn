@@ -2,7 +2,7 @@
 
 [ext_resource type="MeshLibrary" uid="uid://c05c8rbc33x26" path="res://mesh_library.tres" id="1_u52ul"]
 
-[node name="level" type="GridMap" unique_id=528308987]
+[node name="Level" type="GridMap" unique_id=528308987]
 mesh_library = ExtResource("1_u52ul")
 data = {
 "cells": PackedInt32Array(65535, 65535, 0, 65535, 0, 0, 65535, 1, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 1, 65535, 0, 1, 0, 0, 1, 1, 0, 65535, 65534, 0, 0, 65534, 0, 1, 65534, 0, 2, 65534, 0, 2, 65535, 0, 2, 0, 0, 2, 1, 0)
